@@ -1,9 +1,16 @@
-header {
-    margin-top: 125px;
-	margin-left: 60px;
+#header {
     text-align: center;
     font-size: 85px;
 	font-family: "Dancing Script", sans-serif;
 	color: #9F1DB2;
+	
+}
+
+/*---------------------Fade in jumbotron------------------*/
+#jumbotron {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+/*  -webkit-animation-iteration-count: infinite;*/
+	margin-top: 225px;
 	
 }
