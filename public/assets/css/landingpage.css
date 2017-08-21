@@ -1,11 +1,8 @@
 body {
-<<<<<<< HEAD
     width: 90%;
     margin: 0 auto;
     padding: 0;
     font-family: "Quicksand", sans-serif;
-    background-color: #BEFF79;
-    
 }
 
 header {
@@ -31,35 +28,13 @@ p {
 }
 
 
-#box {
-   margin: 5px;    
+#box {      
+   margin-top: 255px;    
    width: 375px;
    height: 215px;
    padding: 5px;    
    border:1px solid green;
-   background-color: rgba(128,0,128,0.8)    
+    background: rgba(241,147,255,0.3);
+    
 }
 
-#calendar {
-    margin-left: 195px;
-    margin-top: 60px;
-    width: 200px;
-    height: 200px;
-}
-=======
-  margin: 0;
-  padding: 0;
-  font-family: "Quicksand", sans-serif;
-}
-
-#npBtn {
-	color: white;
-	background: black;
-}
-#dropDown {
-	float: right;
-}
-#topBar {
-	margin: 30px;
-}
->>>>>>> 665b0a4e1770ad659d0a81fbff9d5ffc4a4de08f
