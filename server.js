@@ -18,7 +18,8 @@ app.use(bodyParser.text({ type: 'text/html' }));
 
 app.use(methodOverride('_method'));
 
-app.use('/', routes);
+require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 
 
