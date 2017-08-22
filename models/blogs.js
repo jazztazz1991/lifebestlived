@@ -19,7 +19,13 @@ module.exports = function(sequelize,DataTypes){
             }
         }
 	});
-    
+    Blogs.associate = function(models) {
+    // Associating Author with Posts
+    // When an Author is deleted, also delete any associated Posts
+    Blogs.hasMany(models.Comments, {
+      onDelete: "cascade"
+    });
+  };
     
 	return Blogs;
 };

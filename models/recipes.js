@@ -2,19 +2,29 @@ module.exports = function(sequelize,DataTypes){
 	var Recipes = sequelize.define("Recipes",{
 		title:{
 			type: DataTypes.STRING,
+            allowNull: false,
 			validate: {
 				len: [1]
 			}
 		},
 		description: {
 			type: DataTypes.STRING,
+            allowNull: false,
 			validate:{
                 len: [1]
             }
 		},
         author: {
             type: DataTypes.STRING,
+            allowNull: false,
             validate:{
+                len: [1]
+            }
+        },
+        keyword: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
                 len: [1]
             }
         }
