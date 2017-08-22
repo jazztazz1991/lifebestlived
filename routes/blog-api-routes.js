@@ -36,6 +36,7 @@ module.exports = function(app) {
       }
     })
     .then(function(dbPost) {
+        console.log("39 is running");
       res.json(dbPost);
     });
   });
@@ -54,13 +55,14 @@ module.exports = function(app) {
   });
 
   // DELETE route for deleting posts
-  app.delete("/api/posts/:id", function(req, res) {
+  app.delete("/api/posts/delete/:id", function(req, res) {
     db.Post.destroy({
       where: {
         id: req.params.id
       }
     })
     .then(function(dbPost) {
+        console.log("this is running");
       res.json(dbPost);
     });
   });

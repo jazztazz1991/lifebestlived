@@ -31,7 +31,7 @@ $(document).ready(function() {
   function deletePost(id) {
     $.ajax({
       method: "DELETE",
-      url: "/api/posts/" + id
+      url: "/api/posts/delete/" + id
     })
     .done(function() {
       getPosts(postCategorySelect.val());
@@ -113,7 +113,7 @@ $(document).ready(function() {
     window.location.href = "/cms?post_id=" + currentPost.id;
   }
 
-  // This function displays a messgae when there are no posts
+  // This function displays a message when there are no posts
   function displayEmpty() {
     blogContainer.empty();
     var messageh2 = $("<h2>");
