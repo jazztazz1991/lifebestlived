@@ -53,7 +53,6 @@ module.exports = function(app) {
       res.json(dbPost);
     });
   });
-R
   // DELETE route for deleting posts
   app.delete("/api/recipes/delete/:id", function(req, res) {
     db.Recipes.destroy({
