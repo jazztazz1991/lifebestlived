@@ -11,10 +11,13 @@ router.get('/', function(req, res) {
 
 
 router.get('/blog', function(req,res){
-    db.Blogs.findAll({}).then(function(dbTodo) {
-      // We have access to the todos as an argument inside of the callback function
-      res.json(dbTodo);
-    });
+   res.sendFile(path.join(__dirname, "../public/blog.html"));
+})
+router.get('/recipes', function(req,res){
+   res.sendFile(path.join(__dirname, "../public/recipes.html"));
+})
+router.get('/events', function(req,res){
+   res.sendFile(path.join(__dirname, "../public/events.html"));
 })
 
 // Export routes for server.js to use.
