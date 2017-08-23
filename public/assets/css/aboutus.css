@@ -12,5 +12,13 @@
   -webkit-animation-delay: 1s;
 /*  -webkit-animation-iteration-count: infinite;*/
 	margin-top: 225px;
+	background: rgba(255,255,255,0.7);
 	
+}
+body { 
+  background: url(images/bees.jpeg) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
