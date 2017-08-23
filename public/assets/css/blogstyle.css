@@ -9,9 +9,9 @@
 	margin: 30px;
 }
 #box {
-	border: 1px solid black;
+	
 	padding: 20px;
-	background: rgba(255,255,255,0.9);
+	background: rgba(255,255,255,0.7);
 }
 body {
     width: 100%;
@@ -23,6 +23,8 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
  }
+
+
 
 
 /*	-----------------MEDIA For devices 400px and larger:-------------------*/
@@ -52,8 +54,8 @@ background: black;
 }
 	
 #box {
-	border: 1px solid black;
+
 	padding: 20px;
-	background: rgba(255,255,255,0.9);
+	background: rgba(255,255,255,0.7);
 }
 }
