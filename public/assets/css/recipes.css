@@ -31,6 +31,38 @@ body {
   background-size: cover;
 }
 
+ .container{
+   margin-top: 25px;
+   margin-left: 30px;	
+   width: 375px;
+   height: 775px;
+   padding: 5px; 
+   background: rgba(255,255,255,0.7);
+}
+#banana{
+
+}
+
+#chicken {
+    
+    
+}
+
+#flatbread{
+}
+
+footer {
+		color: white;
+		font-family: "Quicksand", sans-serif;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 1rem;
+		text-align: center;
+		text-shadow: 2px 2px black; 
+/*	background: rgba(255,255,255,0.7); use only if you want to add the translucent box*/
+}
 /*	-----------------MEDIA For devices 400px and larger:-------------------*/
 @media only screen and (min-device-width: 400px) {
   #searchBar {
@@ -85,4 +117,17 @@ header {
 
 h3{
     font-family: "Quicksand", sans-serif;
+}
+footer {
+		color: white;
+		font-family: "Quicksand", sans-serif;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 1rem;
+		text-align: center;
+		text-shadow: 2px 2px black; 
+/*	background: rgba(255,255,255,0.7); use only if you want to add the translucent box*/
+}
 }
