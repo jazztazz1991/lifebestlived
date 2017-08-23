@@ -3,6 +3,7 @@
     font-size: 85px;
 	font-family: "Dancing Script", sans-serif;
 	color: #9F1DB2;
+	text-shadow: 2px 2px black;
 	
 }
 
@@ -11,8 +12,8 @@
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: .5s;
 /*  -webkit-animation-iteration-count: infinite;*/
-	margin-top: 15px;
 	background: rgba(255,255,255,0.7);
+	margin-top: 25px;
 	
 }
 
@@ -24,14 +25,33 @@ body {
   background-size: cover;
 }
 
+#title {
+	font-family: "Dancing Script", sans-serif;
+	color: #fff;
+	text-shadow: 2px 2px black;
+	font-size: 85px;
+	left: 60px;
+	position: relative;
+}
 /*	-----------------MEDIA For devices 400px and larger:-------------------*/
 @media only screen and (min-device-width: 400px) {
 
+#title {
+	font-family: "Dancing Script", sans-serif;
+	color: #fff;
+	text-shadow: 2px 2px black;
+	font-size: 85px;
+	left: 60px;
+	position: relative;
+}	
+	
 #header {
     text-align: center;
     font-size: 85px;
 	font-family: "Dancing Script", sans-serif;
 	color: #9F1DB2;
+	text-shadow: 2px 2px black;
+	
 	
 }
 
@@ -40,8 +60,8 @@ body {
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 1s;
 /*  -webkit-animation-iteration-count: infinite;*/
-	margin-top: 225px;
 	background: rgba(255,255,255,0.7);
+	margin-top: 25px;
 	
 }
 body { 
