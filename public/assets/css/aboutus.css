@@ -9,8 +9,16 @@
 /*---------------------Fade in jumbotron------------------*/
 #jumbotron {
   -webkit-animation-duration: 2s;
-  -webkit-animation-delay: .5s;
+  -webkit-animation-delay: 1s;
 /*  -webkit-animation-iteration-count: infinite;*/
-	margin-top: 15px;
+	margin-top: 225px;
+	background: rgba(255,255,255,0.7);
 	
+}
+body { 
+  background: url(images/bees.jpeg) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
