@@ -28,7 +28,7 @@ module.exports = function(app) {
     });
   });
 
-  // Get rotue for retrieving a single post
+  // Get routue for retrieving a single post
   app.get("/api/posts/:id", function(req, res) {
     db.Post.findOne({
       where: {

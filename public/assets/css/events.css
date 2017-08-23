@@ -28,3 +28,37 @@ header {
     width: 100%;
     height: auto;
 }
+/*	-----------------MEDIA For devices 400px and larger:-------------------*/
+@media only screen and (min-device-width: 400px) {
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+	background: url(images/bees.jpeg) no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+     
+}
+
+header {
+    margin:  auto 55px;
+    text-align: center;
+    font-size: 95px;
+	font-family: "Dancing Script", sans-serif; 
+	color: #9F1DB2;
+    
+}
+
+.container{
+    margin: auto;
+    width: 100%;
+}
+#calendar {
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+}

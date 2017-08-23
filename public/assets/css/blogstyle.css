@@ -8,3 +8,52 @@
 #topBar {
 	margin: 30px;
 }
+#box {
+	border: 1px solid black;
+	padding: 20px;
+	background: rgba(255,255,255,0.9);
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+	background: url(../images/bees.jpeg) no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+ }
+
+
+/*	-----------------MEDIA For devices 400px and larger:-------------------*/
+@media only screen and (min-device-width: 400px) {
+body { 
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+		background-image: url('../images/bees.jpeg'); 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+	
+#npBtn {
+color: white;
+background: black;
+}
+	
+#dropDown {
+	float: right;
+}
+	
+#topBar {
+	margin: 30px;
+}
+	
+#box {
+	border: 1px solid black;
+	padding: 20px;
+	background: rgba(255,255,255,0.9);
+}
+}
