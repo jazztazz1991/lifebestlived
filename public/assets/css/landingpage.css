@@ -16,8 +16,8 @@ header {
     text-align: center;
     font-size: 85px;
 	font-family: "Dancing Script", sans-serif;
-	color: #9F1DB2;
-	
+	color: #fff;
+	text-shadow: 2px 2px #000;
 }
 
 h2 {

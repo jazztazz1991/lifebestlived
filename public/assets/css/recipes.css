@@ -15,7 +15,8 @@ header {
     text-align: center;
     font-size: 85px;
 	font-family: "Dancing Script", sans-serif;
-	color: #9F1DB2;
+	color: #fff;
+	text-shadow: 2px 2px #000;
 }
 
 h3{
@@ -29,6 +30,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
 /*	-----------------MEDIA For devices 400px and larger:-------------------*/
 @media only screen and (min-device-width: 400px) {
   #searchBar {
@@ -55,7 +57,7 @@ body {
    width: 375px;
    height: 775px;
    padding: 5px; 
-   background: rgba(241,147,255,0.5);
+   background: rgba(255,255,255,0.7);
 }
 
 #banana{
@@ -69,4 +71,18 @@ body {
 
 #flatbread{
     
+}
+/*----------*/
+header {
+    margin-top: 15px;
+	margin-left: 85px;
+    text-align: center;
+    font-size: 85px;
+	font-family: "Dancing Script", sans-serif;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+}
+
+h3{
+    font-family: "Quicksand", sans-serif;
 }
