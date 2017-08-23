@@ -16,6 +16,7 @@
 	margin-top: 25px;
 	
 }
+/*---------------------------------------*/
 
 body { 
   background: url(images/bees.jpeg) no-repeat; 
@@ -33,8 +34,12 @@ body {
 	left: 60px;
 	position: relative;
 }
-/*	-----------------MEDIA For devices 400px and larger:-------------------*/
-@media only screen and (min-device-width: 400px) {
+
+/*	-----------------MEDIA For phonesr:-------------------*/
+@media only screen and (max-width: 768px) {
+	[class*="col-"] {
+    width: 100%;
+}
 
 #title {
 	font-family: "Dancing Script", sans-serif;
@@ -64,6 +69,8 @@ body {
 	margin-top: 25px;
 	
 }
+/*	--------------------------------------------*/
+	
 body { 
   background: url(images/bees.jpeg) no-repeat; 
   -webkit-background-size: cover;
