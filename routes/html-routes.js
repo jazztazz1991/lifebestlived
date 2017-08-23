@@ -20,9 +20,13 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "../public/index.html"));
       });
     
-      // blog route loads blog.html
+      // adminside of blog route loads blog.html
     app.get("/blog", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/blog.html"));
+    });
+	//user side of blog route loads userBlog.html
+	app.get("/userBlog", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/userBlog.html"));
     });
 
         // recipe route loads recipes.html
