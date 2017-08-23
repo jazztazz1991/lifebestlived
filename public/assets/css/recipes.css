@@ -8,10 +8,46 @@
 	color: white;
 
 }
+
+header {
+    margin-top: 15px;
+	margin-left: 85px;
+    text-align: center;
+    font-size: 85px;
+	font-family: "Dancing Script", sans-serif;
+	color: #9F1DB2;
+}
+
+h3{
+    font-family: "Quicksand", sans-serif;
+}
+
 body { 
   background: url(images/bees.jpeg) no-repeat; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.container{
+   margin-top: 25px;
+   margin-left: 30px;	
+   width: 375px;
+   height: 775px;
+   padding: 5px; 
+   background: rgba(241,147,255,0.5);
+}
+
+#banana{
+
+}
+
+#chicken {
+    
+    
+}
+
+#flatbread{
+    
 }
