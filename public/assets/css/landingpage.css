@@ -71,3 +71,81 @@ a:active {
    
 }
 
+/*	-----------------MEDIA For devices 400px and larger:-------------------*/
+@media only screen and (min-device-width: 400px) {
+	
+body {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+	background: url(images/bees.jpeg) no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  
+}
+
+header {
+    margin-top: 125px;
+	margin-left: 85px;
+    text-align: center;
+    font-size: 65px;
+	font-family: "Dancing Script", sans-serif;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	
+}
+
+h2 {
+    margin-top: 45px;
+    text-align: center;
+}
+
+img {
+    margin-top: 75px;
+    margin-left: 460px;
+    width: 350px;
+    height: 350px;    
+}
+
+p {
+    text-align: center;
+	color: white;
+	font-family: "Quicksand", sans-serif;
+	font-weight: bold;
+}
+
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:visited {
+    color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:active {
+    color: #fff;
+	text-decoration: none;
+}
+
+#box {      
+   margin-top: 65px;
+   margin-left: 30px;	
+   width: 375px;
+   height: 215px;
+   padding: 5px; 
+   background: rgba(241,147,255,0.5);
+   
+}
+
+}

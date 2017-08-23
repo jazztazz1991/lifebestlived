@@ -23,3 +23,32 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+/*	-----------------MEDIA For devices 400px and larger:-------------------*/
+@media only screen and (min-device-width: 400px) {
+
+#header {
+    text-align: center;
+    font-size: 85px;
+	font-family: "Dancing Script", sans-serif;
+	color: #9F1DB2;
+	
+}
+
+/*---------------------Fade in jumbotron------------------*/
+#jumbotron {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+/*  -webkit-animation-iteration-count: infinite;*/
+	margin-top: 225px;
+	background: rgba(255,255,255,0.7);
+	
+}
+body { 
+  background: url(images/bees.jpeg) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}

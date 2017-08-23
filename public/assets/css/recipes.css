@@ -29,8 +29,27 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+/*	-----------------MEDIA For devices 400px and larger:-------------------*/
+@media only screen and (min-device-width: 400px) {
+  #searchBar {
+	float: right;
+	right: 20px;
+}	
 
-.container{
+#btns {
+	background: black;
+	color: white;
+
+}
+body { 
+  background: url(images/bees.jpeg) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}	
+
+  .container{
    margin-top: 25px;
    margin-left: 30px;	
    width: 375px;
@@ -50,4 +69,5 @@ body {
 
 #flatbread{
     
+}
 }
