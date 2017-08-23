@@ -11,17 +11,20 @@ body {
 }
 
 header {
-    margin-top: 55px;
+    margin:  auto 55px;
     text-align: center;
     font-size: 95px;
 	font-family: "Dancing Script", sans-serif; 
 	color: #9F1DB2;
+    
 }
 
-
+.container{
+    margin: auto;
+    width: 100%;
+}
 #calendar {
-    margin-left: 195px;
-    margin-top: 50px;
-    width: 200px;
-    height: 200px;
+    margin: auto;
+    width: 100%;
+    height: auto;
 }
