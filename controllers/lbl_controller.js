@@ -10,9 +10,13 @@ router.get('/', function(req, res) {
 });
 
 
-router.get('/blog', function(req,res){
-   res.sendFile(path.join(__dirname, "../public/blog.html"));
+router.get('/userBlog', function(req,res){
+   res.sendFile(path.join(__dirname, "../public/userBlog.html"));
 })
+//open when using adminside of blog
+//router.get('/blog', function(req,res){
+//   res.sendFile(path.join(__dirname, "../public/blog.html"));
+//})
 router.get('/recipes', function(req,res){
    res.sendFile(path.join(__dirname, "../public/recipes.html"));
 })
