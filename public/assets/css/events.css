@@ -32,14 +32,14 @@ header {
 footer {
 		color: white;
 		font-family: "Quicksand", sans-serif;
-		position: absolute;
+		position: relative;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		padding: 1rem;
 		text-align: center;
 		text-shadow: 2px 2px black; 
-/*	background: rgba(255,255,255,0.7); use only if you want to add the translucent box*/
+/*	background: rgba(255,255,255,0.7); */
 }
 /*	-----------------MEDIA For devices 400px and larger:-------------------*/
 @media only screen and (min-device-width: 400px) {
@@ -72,8 +72,10 @@ header {
 }
 #calendar {
     margin: auto;
-    width: 100%;
+    width: 660px;
     height: auto;
+    background-color: rgba(255,255,255,0.7);
+    overflow: auto;
 }
 
 footer {
