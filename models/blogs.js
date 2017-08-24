@@ -11,13 +11,7 @@ module.exports = function(sequelize,DataTypes){
 			validate:{
                 len: [1]
             }
-		},
-        author: {
-            type: DataTypes.STRING,
-            validate:{
-                len: [1]
-            }
-        }
+		}
 	});
     Blogs.associate = function(models) {
     // Associating Author with Posts

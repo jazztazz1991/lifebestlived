@@ -3,3 +3,4 @@ function getwords() {
   document.getElementById("para").innerHTML += '<p>'+text
   document.getElementById("words").value = "enter"
 }
+

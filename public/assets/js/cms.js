@@ -48,19 +48,18 @@ $(document).ready(function() {
 
   // Submits a new post and brings user to blog page upon completion
   function submitPost(Post) {
-    $.post("/api/posts/", Post, function() {
+    $.post("/api/blogs/", Post, function() {
       window.location.href = "/blog";
     });
   }
 
   // Gets post data for a post if we're editing
   function getPostData(id) {
-    $.get("/api/posts/" + id, function(data) {
+    $.get("/api/blogs/" + id, function(data) {
       if (data) {
         // If this post exists, prefill our cms forms with its data
         titleInput.val(data.title);
         bodyInput.val(data.body);
-        postCategorySelect.val(data.category);
         // If we have a post with this id, set a flag for us to know to update the post
         // when we hit submit
         updating = true;
@@ -72,7 +71,7 @@ $(document).ready(function() {
   function updatePost(post) {
     $.ajax({
       method: "PUT",
-      url: "/api/posts",
+      url: "/api/blogs",
       data: post
     })
     .done(function() {
