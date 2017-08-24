@@ -13,7 +13,7 @@
   -webkit-animation-delay: .5s;
 /*  -webkit-animation-iteration-count: infinite;*/
 	background: rgba(255,255,255,0.7);
-	margin-top: 25px;
+/*	margin-top: 25px;*/
 	
 }
 /*---------------------------------------*/
@@ -37,13 +37,14 @@ body {
 footer {
 		color: white;
 		font-family: "Quicksand", sans-serif;
-		position: absolute;
+		position: relative;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		padding: 1rem;
 		text-align: center;
 		text-shadow: 2px 2px black; 
+        clear: both;
 /*	background: rgba(255,255,255,0.7); use only if you want to add the translucent box*/
 }
 
