@@ -8,6 +8,7 @@ $(document).ready(function(){
             if( !comments || !comments.length ){
                 displayEmpty();
             }else{
+                console.log("if else shows comments");
                 showComments();
             }
         });
@@ -34,8 +35,9 @@ $(document).ready(function(){
         console.log("These are Comments" + comments);
         for (var i=0; i < comments.length; i++){
             commentHold.push(comments[i]);
+            commentContainer.append(createCommentArea(comments[i]))
         }
-        commentContainer.append(createCommentArea(comments));
+//        commentContainer.append(createCommentArea(commentHold));
        
     } 
     
@@ -44,25 +46,28 @@ $(document).ready(function(){
         newCommentPanel.addClass("panel panel-default");
         var newCommentPanelHeading = $("<div>");
         newCommentPanelHeading.addClass("panel-heading");
-        var deleteBtn = $("<button>");
-        deleteBtn.text("x");
-        deleteBtn.addClass("delete btn btn-danger");
-        var newCommentUser = $("<h2>");
-        var newCommentDate = $("<small>");
+//        var deleteBtn = $("<button>");
+//        deleteBtn.text("x");
+//        deleteBtn.addClass("delete btn btn-danger");
+        var newCommentUser = $("<h4>");
+        var newCommentDate = $("<h5>");
         var newCommentPanelBody = $("<div>");
         newCommentPanelBody.addClass("panel-body");
         var newCommentBody =$("<p>");
         newCommentUser.text(comment.user + " ");
         newCommentBody.text(comment.body);
+        var newHr = $("<hr>");
+        newHr.addClass("hr-color");
         var formattedDate = new Date(comment.createdAt);
         formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
         newCommentDate.text(formattedDate);
         newCommentUser.append(newCommentDate);
-        newCommentPanelHeading.append(deleteBtn);
+//        newCommentPanelHeading.append(deleteBtn);
         newCommentPanelHeading.append(newCommentUser);
         newCommentPanelBody.append(newCommentBody);
         newCommentPanel.append(newCommentPanelHeading);
         newCommentPanel.append(newCommentPanelBody);
+        newCommentPanel.append(newHr);
         newCommentPanel.data("comment", comment);
         
         return newCommentPanel;    
