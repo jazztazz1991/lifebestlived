@@ -19,7 +19,7 @@ $(document).ready(function(){
             }
         });
     }
-    
+     
     //function to delete blogs
     function deleteBlog(){
         var currentPost = $(this).parent().parent().data("blog");
@@ -72,7 +72,7 @@ $(document).ready(function(){
         newBlogPanel.append(newBlogPanelHeading);
         newBlogPanel.append(newBlogPanelBody);
         newBlogPanel.data("blog", blog);
-        console.log(blog);
+        console.log("blog line 75" + blog);
         //return the blog panel
         return newBlogPanel;
     }
@@ -84,7 +84,4 @@ $(document).ready(function(){
         emptyMessage.html("No posts yet for this category, navigate <a href='/cms'>here</a> in order to create a new post.");
         blogContainer.append(emptyMessage);
     }
-    
-    
-    
 })

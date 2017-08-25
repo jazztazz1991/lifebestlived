@@ -11,8 +11,8 @@ module.exports = function(app) {
   // GET route for getting all of the posts
   app.get("/api/blogs/", function(req, res) {
     db.Blogs.findAll({})
-    .then(function(dbPost) {
-      res.json(dbPost);
+    .then(function(dbBlogs) {
+      res.json(dbBlogs);
     });
   });
 
@@ -36,8 +36,8 @@ module.exports = function(app) {
       title: req.body.title,
       text: req.body.body
     })
-    .then(function(dbPost) {
-      res.json(dbPost);
+    .then(function(dbBlogs) {
+      res.json(dbBlogs);
     });
   });
 
