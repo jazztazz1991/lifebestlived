@@ -12,20 +12,20 @@ $(document).ready(function() {
     
     var updating = false;
     
-    getBlogs();
-    
+   getBlogs();
+    console.log("blogid -------------"+ blogId);
     
     function handleSubmit(event){
-        event.preventDefault();
-        console.log("running handleSubmit");
+        event.preventDefault(); 
         if(!userInput.val() || !bodyInput.val()){
             return;
         }
-        
+        blogId= getBlogs();
+         console.log("blogid -------------handle submit"+ blogId);
         var newComment = {
             user: userInput.val().trim(),
             body: bodyInput.val().trim(),
-            blogId: blogId
+            BlogId: $(".blogId").text()
         };
         console.log("newcomment" + newComment);
         submitComment(newComment);
@@ -33,7 +33,7 @@ $(document).ready(function() {
         function submitComment(comment) {
             console.log("submitCOmment" + comment);
             $.post("/api/comments", comment, function() {
-              window.location.href = "/blog";
+              window.location.href = "/blog"; 
             });
           }
         
@@ -43,9 +43,12 @@ $(document).ready(function() {
         
         function renderBlogList(data){
             if(!data.length){
+                console.log("no data to be found");
                 window.location.href = "/blog";
             }
-            console.log("renderBlogList id" + data[data.length -1].id);
-            blogId = data[data.length-1].id;
+            console.log("*********************renderBlogList id" + data[data.length -1]);
+            blogId = data[data.length-1];
+            console.log("blogid -----------render"+ blogId);
+            return blogId;
         }
 });
