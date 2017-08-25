@@ -44,7 +44,7 @@ $(document).ready(function() {
         
         function renderBlogList(data){
             if(!data.length){
-                window.location.href = "/blogs";
+                window.location.href = "/blog";
             }
             console.log("renderBlogList id" + data[data.length -1].id);
             blogId = data[data.length-1].id;
