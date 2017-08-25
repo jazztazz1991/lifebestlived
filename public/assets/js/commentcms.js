@@ -3,9 +3,8 @@ $(document).ready(function() {
   // Getting jQuery references to the post body, title, form, and author select
   var bodyInput = $("#body");
   var userInput = $("#user");
-  var cmsForm = $("#cSubmit");
     
-    $(cmsForm).on("click", handleSubmit);
+    $("#cSubmit").on("click", handleSubmit);
     
     var url = window.location.search;
     var commentId;
