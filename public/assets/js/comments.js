@@ -2,7 +2,9 @@ $(document).ready(function(){
         var commentContainer = $(".comment-container");
         var comments;
     function getComments(){
-        $.get("/api/comments", function(data){
+        var blogId = $(".blogId").text();
+        console.log("@@@@@@@@@@@@" + $(".blogId").text());
+        $.get("/api/comments/"+blogId, function(data){
             console.log("Comments", data);
             comments = data;
             if( !comments || !comments.length ){

@@ -61,6 +61,9 @@ $(document).ready(function(){
         var newBlogBody = $("<p>");
         newBlogTitle.text(blog.title + " ");
         newBlogBody.text(blog.text);
+        var newBlogId = $("<p>");
+        newBlogId.addClass("blogId");
+        newBlogId.text(blog.id);
         var formattedDate = new Date(blog.createdAt);
         formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
         newBlogDate.text(formattedDate);
@@ -69,6 +72,7 @@ $(document).ready(function(){
 //        newBlogPanelHeading.append(editBtn);
         newBlogPanelHeading.append(newBlogTitle);
         newBlogPanelBody.append(newBlogBody);
+        newBlogPanelBody.append(newBlogId);
         newBlogPanel.append(newBlogPanelHeading);
         newBlogPanel.append(newBlogPanelBody);
         newBlogPanel.data("blog", blog);
