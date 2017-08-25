@@ -21,6 +21,7 @@ app.use(methodOverride('_method'));
 require("./routes/blog-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 require("./routes/recipe-api-routes.js")(app);
+require("./routes/comment-api-routes.js")(app);
 
 
 
