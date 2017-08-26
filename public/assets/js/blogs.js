@@ -10,7 +10,6 @@ $(document).ready(function(){
     //getBlogs function retrieving from database
     function getBlogs(){
         $.get("/api/blogs", function(data){
-            console.log("Blogs", data);
             blogs = data;
             if( !blogs || !blogs.length ){
                 displayEmpty();
@@ -23,7 +22,6 @@ $(document).ready(function(){
     //function to delete blogs
     function deleteBlog(){
         var currentPost = $(this).parent().parent().data("blog");
-        console.log("delete running");
         $.ajax({
             method: "DELETE",
             url: "/api/blogs/" + currentPost.id
@@ -38,7 +36,6 @@ $(document).ready(function(){
     
     function showBlog(){
         blogContainer.empty();
-        console.log("THIS IS BLOGS" + blogs);
         blogContainer.append(createBlogArea(blogs[blogs.length-1]));
     }
     
@@ -76,7 +73,6 @@ $(document).ready(function(){
         newBlogPanel.append(newBlogPanelHeading);
         newBlogPanel.append(newBlogPanelBody);
         newBlogPanel.data("blog", blog);
-        console.log("blog line 75" + blog);
         //return the blog panel
         return newBlogPanel;
     }

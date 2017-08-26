@@ -13,7 +13,6 @@ $(document).ready(function() {
     var updating = false;
     
    getBlogs();
-    console.log("blogid -------------"+ blogId);
     
     function handleSubmit(event){
         event.preventDefault(); 
@@ -46,9 +45,7 @@ $(document).ready(function() {
                 console.log("no data to be found");
                 window.location.href = "/blog";
             }
-            console.log("*********************renderBlogList id" + data[data.length -1]);
             blogId = data[data.length-1];
-            console.log("blogid -----------render"+ blogId);
             return blogId;
         }
 });

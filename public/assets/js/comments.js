@@ -3,9 +3,7 @@ $(document).ready(function(){
         var comments;
     function getComments(){
         var blogId = $(".blogId").text();
-        console.log("@@@@@@@@@@@@" + $(".blogId").text());
         $.get("/api/comments/"+blogId, function(data){
-            console.log("Comments", data);
             comments = data;
             if( !comments || !comments.length ){
                 displayEmpty();
