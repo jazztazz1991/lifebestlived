@@ -30,15 +30,15 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    overflow: auto;
+  overflow: auto;
 }
 
 
 .container {
    margin-top: 25px;
    margin-left: 30px;	
-   width: 295px;
-   height: 655px;
+   width: auto;
+   height: auto;
    padding: 5px; 
 /*   background: rgba(255,255,255,0.7);*/
 }
@@ -57,7 +57,7 @@ body {
 footer {
 		color: white;
 		font-family: "Quicksand", sans-serif;
-		position: absolute;
+		position: relative;
 		right: 0;
 		bottom: 0;
 		left: 0;
@@ -85,13 +85,14 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: auto;
 }	
 
   .container{
    margin-top: 25px;
    margin-left: 30px;	
-   width: 375px;
-   height: 775px;
+   width: auto;
+   height: auto;
    padding: 5px; 
 /*   background: rgba(255,255,255,0.7);*/
 }
