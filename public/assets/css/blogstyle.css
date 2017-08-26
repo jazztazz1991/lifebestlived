@@ -28,7 +28,7 @@ body {
 footer {
 		color: white;
 		font-family: "Quicksand", sans-serif;
-		position: fixed;
+		position: relative;
 		right: 0;
 		bottom: 0;
         clear: both;
@@ -81,7 +81,7 @@ background: black;
 footer {
 		color: white;
 		font-family: "Quicksand", sans-serif;
-		position: fixed;
+		position: relative;
 		right: 0;
 		bottom: 0;
 		left: 0;
