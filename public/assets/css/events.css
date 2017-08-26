@@ -53,6 +53,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+    padding-bottom: 80px;
      
 }
 
@@ -76,12 +77,12 @@ header {
     height: auto;
     background-color: rgba(255,255,255,0.7);
     overflow: auto;
-}
+    }
 
 footer {
 		color: white;
 		font-family: "Quicksand", sans-serif;
-		position: absolute;
+		position: relative;
 		right: 0;
 		bottom: 0;
 		left: 0;
