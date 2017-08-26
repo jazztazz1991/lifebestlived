@@ -22,12 +22,13 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+    padding-bottom: 80px;
      
 }
 footer {
 		color: white;
 		font-family: "Quicksand", sans-serif;
-		position: absolute;
+		position: fixed;
 		right: 0;
 		bottom: 0;
         clear: both;
@@ -52,6 +53,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+    padding-bottom: 80px;
      
 }
 #npBtn {
@@ -75,7 +77,7 @@ background: black;
 footer {
 		color: white;
 		font-family: "Quicksand", sans-serif;
-		position: absolute;
+		position: fixed;
 		right: 0;
 		bottom: 0;
 		left: 0;
