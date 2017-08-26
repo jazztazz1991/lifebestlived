@@ -79,7 +79,7 @@ $(document).ready(function(){
         commentContainer.empty();
         var emptyMessage = $("<h2>");
         emptyMessage.css({"text-align": "center", "margin-top": "50px"});
-        emptyMessage.html("No posts yet for this category, navigate <a href='/cms'>here</a> in order to create a new post.");
+        emptyMessage.html("No comments yet for this post.");
         commentContainer.append(emptyMessage);
     }
     
