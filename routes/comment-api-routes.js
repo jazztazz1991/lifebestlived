@@ -3,9 +3,9 @@ var db = require("../models");
 
 module.exports = function(app){
     app.get("/api/comments/:id", function(req, res) {
-        console.log(req.params.id);
+        console.log("/id " + req.params.id);
     db.Comments.findAll({
-        where:{
+        where: {
             BlogId: req.params.id
         }
     })
@@ -13,15 +13,7 @@ module.exports = function(app){
       res.json(dbComments);
     });
   });
-    app.get("/api/comments", function(req, res) {
-        console.log(req.params.id);
-    db.Comments.findAll({
-        
-    })
-    .then(function(dbComments) {
-      res.json(dbComments);
-    });
-  });
+   
     app.post("/api/comments", function(req, res) {
     console.log(req.body);
     db.Comments.create({

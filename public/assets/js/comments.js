@@ -1,9 +1,11 @@
 $(document).ready(function(){
         var commentContainer = $(".comment-container");
         var comments;
-    function getComments(){
-        var blogId = $(".blogId").text();
-        $.get("/api/comments/"+blogId, function(data){
+    var blogId;
+    function getComments(id){
+        blogId = id;
+        console.log("parsed blogid " + blogId);
+        $.get("/api/comments/" + blogId, function(data){
             comments = data;
             if( !comments || !comments.length ){
                 displayEmpty();
@@ -11,6 +13,14 @@ $(document).ready(function(){
                 console.log("if else shows comments");
                 showComments();
             }
+        });
+    }
+    
+    function getBlogs(){
+        $.get("/api/blogs", function(data){
+            blogId = data[data.length-1].id;
+            console.log("getblogscomments : " + blogId);
+            getComments(blogId);
         });
     }
            //function to delete blogs
@@ -25,9 +35,8 @@ $(document).ready(function(){
             getBlogs();
         });
     }  
+    getBlogs();
     
-     //initial call for blogs
-    getComments();
     
     function showComments(){
         commentContainer.empty();
