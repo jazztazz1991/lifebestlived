@@ -5,6 +5,8 @@ var bodyParser= require("body-parser");
 var app = express();
 var port = process.env.PORT || 3000;
 var routes = require("./controllers/lbl_controller.js");
+var blogRoutes = require("./controllers/blog_controller.js");
+var commentRoutes = require("./controllers/comment_controller.js");
 
 var db = require("./models");
 
@@ -18,10 +20,13 @@ app.use(bodyParser.text({ type: 'text/html' }));
 
 app.use(methodOverride('_method'));
 
-require("./routes/blog-api-routes.js")(app);
-require("./routes/html-routes.js")(app);
-require("./routes/recipe-api-routes.js")(app);
-require("./routes/comment-api-routes.js")(app);
+app.use("/", routes);
+app.use("/", blogRoutes);
+app.use("/", commentRoutes);
+//require("./routes/blog-api-routes.js")(app);
+////require("./routes/html-routes.js")(app);
+//require("./routes/recipe-api-routes.js")(app);
+//require("./routes/comment-api-routes.js")(app);
 
 
 
