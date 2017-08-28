@@ -73,10 +73,10 @@ header {
 }
 #calendar {
     margin: auto;
-    width: 660px;
-    height: auto;
+    width: 800px;
+    height: 600px;
     background-color: rgba(255,255,255,0.7);
-    overflow: auto;
+    overflow: hidden;
     }
 
 footer {

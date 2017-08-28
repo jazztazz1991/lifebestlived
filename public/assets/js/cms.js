@@ -13,14 +13,14 @@ $(document).ready(function() {
   }
 
   // Getting jQuery references to the post body, title, form, and category select
-  var bodyInput = $("#body");
-  var titleInput = $("#title");
-  var cmsForm = $("#cms");
-  var postCategorySelect = $("#category");
+  var bodyInput = $("#newPostBody");
+  var titleInput = $("#newPostTitle");
+  var cmsForm = $("#newPostForm");
+  var postCategorySelect = $("#newPostSelect");
   // Giving the postCategorySelect a default value
   postCategorySelect.val("Personal");
   // Adding an event listener for when the form is submitted
-  $(cmsForm).on("submit", function handleFormSubmit(event) {
+  $("#submitPost").on("click", function handleFormSubmit(event) {
     event.preventDefault();
     // Wont submit the post if we are missing a body or a title
     if (!titleInput.val().trim() || !bodyInput.val().trim()) {
@@ -32,7 +32,6 @@ $(document).ready(function() {
       body: bodyInput.val().trim(),
       category: postCategorySelect.val()
     };
-
     console.log(newPost);
 
     // If we're updating a post run updatePost to update a post

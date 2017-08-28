@@ -7,3 +7,8 @@ var events = [
 var settings = {};
 var element = document.getElementById('calendar');
 caleandar(element, events, settings);
+
+var cal = {
+    
+    
+}
