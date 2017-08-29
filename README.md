@@ -3,9 +3,9 @@
 
 This site was created by 
 
-Cody Chase - Backend
-Ben Hill - Backend
-Melanie Corchado - Front End
+Cody Chase - Backend<br>
+Ben Hill - Backend<br>
+Melanie Corchado - Front End<br>
 Jeimy Mota - Front End
 
 For this site we created a responsive site to allow users to users to find local events near them that will help them focus on living a healthier life.   The site includes blogs and recipes that correlate to allow users to easily find the recipes that are mentioned in the blog.
