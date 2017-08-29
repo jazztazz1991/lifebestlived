@@ -30,6 +30,22 @@ body {
     padding-bottom: 80px;
      
 }
+
+header {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 85px;
+	font-family: "Dancing Script", sans-serif;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+}
+
+#input {
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+}
+
 footer {
 		color: white;
 		font-family: "Quicksand", sans-serif;
